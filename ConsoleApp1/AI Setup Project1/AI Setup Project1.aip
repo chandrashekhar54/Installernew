@@ -28,16 +28,16 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
     <ROW Directory="ConsoleApp1_Dir" Directory_Parent="APPDIR" DefaultDir="CONSOL~1|ConsoleApp1"/>
-    <ROW Directory="Debug_1_Dir" Directory_Parent="obj_Dir" DefaultDir="Debug"/>
+    <ROW Directory="Debug_2_Dir" Directory_Parent="obj_Dir" DefaultDir="Debug"/>
     <ROW Directory="Debug_Dir" Directory_Parent="bin_Dir" DefaultDir="Debug"/>
-    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
     <ROW Directory="bin_Dir" Directory_Parent="ConsoleApp1_Dir" DefaultDir="bin"/>
-    <ROW Directory="net6.0_1_Dir" Directory_Parent="Debug_1_Dir" DefaultDir="net6.0"/>
+    <ROW Directory="net6.0_2_Dir" Directory_Parent="Debug_2_Dir" DefaultDir="net6.0"/>
     <ROW Directory="net6.0_Dir" Directory_Parent="Debug_Dir" DefaultDir="net6.0"/>
     <ROW Directory="obj_Dir" Directory_Parent="ConsoleApp1_Dir" DefaultDir="obj"/>
-    <ROW Directory="ref_Dir" Directory_Parent="net6.0_1_Dir" DefaultDir="ref"/>
-    <ROW Directory="refint_Dir" Directory_Parent="net6.0_1_Dir" DefaultDir="refint"/>
+    <ROW Directory="ref_Dir" Directory_Parent="net6.0_2_Dir" DefaultDir="ref"/>
+    <ROW Directory="refint_Dir" Directory_Parent="net6.0_2_Dir" DefaultDir="refint"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
     <ROW Component="APPDIR" Value="{524E28B3-057E-4731-9F7F-89D1DE66720C}"/>
@@ -45,49 +45,52 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="APPDIR" ComponentId="{524E28B3-057E-4731-9F7F-89D1DE66720C}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="ConsoleApp1.csproj" ComponentId="{7C7152B1-A860-4F67-975B-DBE31189AC83}" Directory_="ConsoleApp1_Dir" Attributes="0" KeyPath="ConsoleApp1.csproj" Type="0"/>
-    <ROW Component="ConsoleApp1.csproj.nuget.dgspec.json" ComponentId="{501F43C1-FEBB-476C-88B6-112ACE168082}" Directory_="obj_Dir" Attributes="0" KeyPath="ConsoleApp1.csproj.nuget.dgspec.json" Type="0"/>
-    <ROW Component="ConsoleApp1.deps.json" ComponentId="{4616A0E0-E97C-443B-B257-24892874F818}" Directory_="net6.0_Dir" Attributes="0" KeyPath="ConsoleApp1.deps.json" Type="0"/>
-    <ROW Component="ConsoleApp1.dll" ComponentId="{A6F1C3F2-AC8D-4253-AEDE-A034FD029403}" Directory_="net6.0_Dir" Attributes="0" KeyPath="ConsoleApp1.dll"/>
-    <ROW Component="ConsoleApp1.dll_1" ComponentId="{96C18218-D5D3-41EB-9E02-5257482753B7}" Directory_="net6.0_1_Dir" Attributes="0" KeyPath="ConsoleApp1.dll_1"/>
-    <ROW Component="ConsoleApp1.dll_2" ComponentId="{C78B3C35-BC06-42BE-A633-15FF30F2A4C6}" Directory_="ref_Dir" Attributes="0" KeyPath="ConsoleApp1.dll_2"/>
-    <ROW Component="ConsoleApp1.dll_3" ComponentId="{5FFA8D3A-9567-4E53-A926-DCDEF125FC86}" Directory_="refint_Dir" Attributes="0" KeyPath="ConsoleApp1.dll_3"/>
-    <ROW Component="ConsoleApp1.exe" ComponentId="{5D879034-4050-4AED-92FE-ADEAE35D00A3}" Directory_="net6.0_Dir" Attributes="256" KeyPath="ConsoleApp1.exe"/>
-    <ROW Component="NETCoreAppVersionv6.0.AssemblyAttributes.cs" ComponentId="{94482637-3251-4481-B474-1BF195B6B4C0}" Directory_="net6.0_1_Dir" Attributes="0" KeyPath="NETCoreAppVersionv6.0.AssemblyAttributes.cs" Type="0"/>
+    <ROW Component="ConsoleApp1.csproj" ComponentId="{051CD8F7-12DB-4282-B6AB-27DF0872DCB4}" Directory_="ConsoleApp1_Dir" Attributes="0" KeyPath="ConsoleApp1.csproj" Type="0"/>
+    <ROW Component="ConsoleApp1.csproj.nuget.dgspec.json" ComponentId="{40A53EC5-EB03-4A07-B74E-33FCD1992A58}" Directory_="obj_Dir" Attributes="0" KeyPath="ConsoleApp1.csproj.nuget.dgspec.json" Type="0"/>
+    <ROW Component="ConsoleApp1.deps.json" ComponentId="{AF9578FB-A7F4-468E-8F1A-A3B0FEB95FCD}" Directory_="net6.0_Dir" Attributes="0" KeyPath="ConsoleApp1.deps.json" Type="0"/>
+    <ROW Component="ConsoleApp1.dll" ComponentId="{08E2291A-5432-4F75-99BE-178235FC486A}" Directory_="net6.0_Dir" Attributes="0" KeyPath="ConsoleApp1.dll"/>
+    <ROW Component="ConsoleApp1.dll_4" ComponentId="{9D88281E-66FE-4DAE-BA3E-F9734B503F05}" Directory_="net6.0_2_Dir" Attributes="0" KeyPath="ConsoleApp1.dll_4"/>
+    <ROW Component="ConsoleApp1.dll_5" ComponentId="{74046492-D6A1-4C2B-B1EE-139ABE9E003A}" Directory_="ref_Dir" Attributes="0" KeyPath="ConsoleApp1.dll_5"/>
+    <ROW Component="ConsoleApp1.dll_6" ComponentId="{7AF0E695-5A99-48F0-B9A1-C02F1E75A1DB}" Directory_="refint_Dir" Attributes="0" KeyPath="ConsoleApp1.dll_6"/>
+    <ROW Component="ConsoleApp1.exe" ComponentId="{19D783D1-F5ED-43FF-AB10-172107832719}" Directory_="net6.0_Dir" Attributes="256" KeyPath="ConsoleApp1.exe"/>
+    <ROW Component="NETCoreAppVersionv6.0.AssemblyAttributes.cs" ComponentId="{DAFA7279-383E-445C-97A0-63B55846F750}" Directory_="net6.0_2_Dir" Attributes="0" KeyPath="NETCoreAppVersionv6.0.AssemblyAttributes.cs" Type="0"/>
     <ROW Component="ProductInformation" ComponentId="{B2E3BFA4-9CF6-4AC0-8978-6E74D0C4E3F8}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
-    <ROW Component="apphost.exe" ComponentId="{A64F1EA9-2C45-46F4-B958-259D4DAFFA35}" Directory_="net6.0_1_Dir" Attributes="256" KeyPath="apphost.exe"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{C855F0B0-CB2F-48A3-8E01-BA2BD96766DD}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="apphost.exe" ComponentId="{D1683E47-84C4-4E9F-817D-ED5719EF161A}" Directory_="net6.0_2_Dir" Attributes="256" KeyPath="apphost.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="ConsoleApp1.deps.json" Component_="ConsoleApp1.deps.json" FileName="CONSOL~1.JSO|ConsoleApp1.deps.json" Attributes="0" SourcePath="..\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json" SelfReg="false"/>
-    <ROW File="ConsoleApp1.dll" Component_="ConsoleApp1.dll" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="..\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll" SelfReg="false"/>
-    <ROW File="ConsoleApp1.exe" Component_="ConsoleApp1.exe" FileName="CONSOL~1.EXE|ConsoleApp1.exe" Attributes="0" SourcePath="..\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="ConsoleApp1.pdb" Component_="ConsoleApp1.exe" FileName="CONSOL~1.PDB|ConsoleApp1.pdb" Attributes="0" SourcePath="..\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb" SelfReg="false"/>
-    <ROW File="ConsoleApp1.runtimeconfig.json" Component_="ConsoleApp1.deps.json" FileName="CONSOL~2.JSO|ConsoleApp1.runtimeconfig.json" Attributes="0" SourcePath="..\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json" SelfReg="false"/>
-    <ROW File="ConsoleApp1.csproj" Component_="ConsoleApp1.csproj" FileName="CONSOL~1.CSP|ConsoleApp1.csproj" Attributes="0" SourcePath="..\ConsoleApp1\ConsoleApp1.csproj" SelfReg="false"/>
-    <ROW File="ConsoleApp1.csproj.nuget.dgspec.json" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="CONSOL~1.JSO|ConsoleApp1.csproj.nuget.dgspec.json" Attributes="0" SourcePath="..\ConsoleApp1\obj\ConsoleApp1.csproj.nuget.dgspec.json" SelfReg="false"/>
-    <ROW File="ConsoleApp1.csproj.nuget.g.props" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="CONSOL~1.PRO|ConsoleApp1.csproj.nuget.g.props" Attributes="0" SourcePath="..\ConsoleApp1\obj\ConsoleApp1.csproj.nuget.g.props" SelfReg="false"/>
-    <ROW File="ConsoleApp1.csproj.nuget.g.targets" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="CONSOL~1.TAR|ConsoleApp1.csproj.nuget.g.targets" Attributes="0" SourcePath="..\ConsoleApp1\obj\ConsoleApp1.csproj.nuget.g.targets" SelfReg="false"/>
-    <ROW File="NETCoreAppVersionv6.0.AssemblyAttributes.cs" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="NETCOR~1.CS|.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" SelfReg="false"/>
-    <ROW File="apphost.exe" Component_="apphost.exe" FileName="apphost.exe" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\apphost.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="ConsoleApp1.AssemblyInfo.cs" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.CS|ConsoleApp1.AssemblyInfo.cs" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs" SelfReg="false"/>
-    <ROW File="ConsoleApp1.AssemblyInfoInputs.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.CAC|ConsoleApp1.AssemblyInfoInputs.cache" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache" SelfReg="false"/>
-    <ROW File="ConsoleApp1.assets.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~2.CAC|ConsoleApp1.assets.cache" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.assets.cache" SelfReg="false"/>
-    <ROW File="ConsoleApp1.csproj.CoreCompileInputs.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~3.CAC|ConsoleApp1.csproj.CoreCompileInputs.cache" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache" SelfReg="false"/>
-    <ROW File="ConsoleApp1.csproj.FileListAbsolute.txt" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.TXT|ConsoleApp1.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.FileListAbsolute.txt" SelfReg="false"/>
-    <ROW File="ConsoleApp1.dll_1" Component_="ConsoleApp1.dll_1" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll" SelfReg="false"/>
-    <ROW File="ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.EDI|ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" SelfReg="false"/>
-    <ROW File="ConsoleApp1.genruntimeconfig.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~4.CAC|ConsoleApp1.genruntimeconfig.cache" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache" SelfReg="false"/>
-    <ROW File="ConsoleApp1.GlobalUsings.g.cs" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~2.CS|ConsoleApp1.GlobalUsings.g.cs" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GlobalUsings.g.cs" SelfReg="false"/>
-    <ROW File="ConsoleApp1.pdb_1" Component_="ConsoleApp1.dll_1" FileName="CONSOL~1.PDB|ConsoleApp1.pdb" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb" SelfReg="false"/>
-    <ROW File="ConsoleApp1.dll_2" Component_="ConsoleApp1.dll_2" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll" SelfReg="false"/>
-    <ROW File="ConsoleApp1.dll_3" Component_="ConsoleApp1.dll_3" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="..\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll" SelfReg="false"/>
-    <ROW File="project.assets.json" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="PROJEC~1.JSO|project.assets.json" Attributes="0" SourcePath="..\ConsoleApp1\obj\project.assets.json" SelfReg="false"/>
-    <ROW File="project.nuget.cache" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="PROJEC~1.CAC|project.nuget.cache" Attributes="0" SourcePath="..\ConsoleApp1\obj\project.nuget.cache" SelfReg="false"/>
-    <ROW File="Program.cs" Component_="ConsoleApp1.csproj" FileName="Program.cs" Attributes="0" SourcePath="..\ConsoleApp1\Program.cs" SelfReg="false"/>
+    <ROW File="ConsoleApp1.deps.json" Component_="ConsoleApp1.deps.json" FileName="CONSOL~1.JSO|ConsoleApp1.deps.json" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json" SelfReg="false"/>
+    <ROW File="ConsoleApp1.dll" Component_="ConsoleApp1.dll" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll" SelfReg="false"/>
+    <ROW File="ConsoleApp1.exe" Component_="ConsoleApp1.exe" FileName="CONSOL~1.EXE|ConsoleApp1.exe" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ConsoleApp1.pdb" Component_="ConsoleApp1.exe" FileName="CONSOL~1.PDB|ConsoleApp1.pdb" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb" SelfReg="false"/>
+    <ROW File="ConsoleApp1.runtimeconfig.json" Component_="ConsoleApp1.deps.json" FileName="CONSOL~2.JSO|ConsoleApp1.runtimeconfig.json" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json" SelfReg="false"/>
+    <ROW File="GRL_Icon.ico" Component_="ConsoleApp1.deps.json" FileName="GRL_Icon.ico" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\GRL_Icon.ico" SelfReg="false"/>
+    <ROW File="ConsoleApp1.csproj" Component_="ConsoleApp1.csproj" FileName="CONSOL~1.CSP|ConsoleApp1.csproj" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj" SelfReg="false"/>
+    <ROW File="GRL_Icon.ico_2" Component_="ConsoleApp1.csproj" FileName="GRL_Icon.ico" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\GRL_Icon.ico" SelfReg="false"/>
+    <ROW File="ConsoleApp1.csproj.nuget.dgspec.json" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="CONSOL~1.JSO|ConsoleApp1.csproj.nuget.dgspec.json" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\ConsoleApp1.csproj.nuget.dgspec.json" SelfReg="false"/>
+    <ROW File="ConsoleApp1.csproj.nuget.g.props" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="CONSOL~1.PRO|ConsoleApp1.csproj.nuget.g.props" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\ConsoleApp1.csproj.nuget.g.props" SelfReg="false"/>
+    <ROW File="ConsoleApp1.csproj.nuget.g.targets" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="CONSOL~1.TAR|ConsoleApp1.csproj.nuget.g.targets" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\ConsoleApp1.csproj.nuget.g.targets" SelfReg="false"/>
+    <ROW File="NETCoreAppVersionv6.0.AssemblyAttributes.cs" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="NETCOR~1.CS|.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" SelfReg="false"/>
+    <ROW File="apphost.exe" Component_="apphost.exe" FileName="apphost.exe" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\apphost.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ConsoleApp1.AssemblyInfo.cs" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.CS|ConsoleApp1.AssemblyInfo.cs" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs" SelfReg="false"/>
+    <ROW File="ConsoleApp1.AssemblyInfoInputs.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.CAC|ConsoleApp1.AssemblyInfoInputs.cache" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache" SelfReg="false"/>
+    <ROW File="ConsoleApp1.assets.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~2.CAC|ConsoleApp1.assets.cache" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.assets.cache" SelfReg="false"/>
+    <ROW File="ConsoleApp1.csproj.CoreCompileInputs.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~3.CAC|ConsoleApp1.csproj.CoreCompileInputs.cache" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache" SelfReg="false"/>
+    <ROW File="ConsoleApp1.csproj.FileListAbsolute.txt" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.TXT|ConsoleApp1.csproj.FileListAbsolute.txt" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.FileListAbsolute.txt" SelfReg="false"/>
+    <ROW File="ConsoleApp1.dll_4" Component_="ConsoleApp1.dll_4" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll" SelfReg="false"/>
+    <ROW File="ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~1.EDI|ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" SelfReg="false"/>
+    <ROW File="ConsoleApp1.genruntimeconfig.cache" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~4.CAC|ConsoleApp1.genruntimeconfig.cache" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache" SelfReg="false"/>
+    <ROW File="ConsoleApp1.GlobalUsings.g.cs" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs" FileName="CONSOL~2.CS|ConsoleApp1.GlobalUsings.g.cs" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GlobalUsings.g.cs" SelfReg="false"/>
+    <ROW File="ConsoleApp1.pdb_2" Component_="ConsoleApp1.dll_4" FileName="CONSOL~1.PDB|ConsoleApp1.pdb" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb" SelfReg="false"/>
+    <ROW File="ConsoleApp1.dll_5" Component_="ConsoleApp1.dll_5" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll" SelfReg="false"/>
+    <ROW File="ConsoleApp1.dll_6" Component_="ConsoleApp1.dll_6" FileName="CONSOL~1.DLL|ConsoleApp1.dll" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll" SelfReg="false"/>
+    <ROW File="project.assets.json" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="PROJEC~1.JSO|project.assets.json" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\project.assets.json" SelfReg="false"/>
+    <ROW File="project.nuget.cache" Component_="ConsoleApp1.csproj.nuget.dgspec.json" FileName="PROJEC~1.CAC|project.nuget.cache" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\obj\project.nuget.cache" SelfReg="false"/>
+    <ROW File="Program.cs" Component_="ConsoleApp1.csproj" FileName="Program.cs" Attributes="0" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\Program.cs" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -143,6 +146,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
     <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
@@ -169,9 +173,10 @@
     <ROW Feature_="MainFeature" Component_="ConsoleApp1.csproj.nuget.dgspec.json"/>
     <ROW Feature_="MainFeature" Component_="NETCoreAppVersionv6.0.AssemblyAttributes.cs"/>
     <ROW Feature_="MainFeature" Component_="apphost.exe"/>
-    <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_2"/>
-    <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -203,7 +208,7 @@
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="ConsoleApp1" Directory_="DesktopFolder" Name="CONSOL~1|ConsoleApp1" Component_="ConsoleApp1.exe" Target="[#ConsoleApp1.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="net6.0_Dir"/>
+    <ROW Shortcut="ConsoleApp1" Directory_="SHORTCUTDIR" Name="Chandu" Component_="ConsoleApp1.exe" Target="[#ConsoleApp1.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="net6.0_Dir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
