@@ -7,6 +7,7 @@
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="GRL_Icon.exe" Type="8"/>
     <ROW Property="Manufacturer" Value="GRL"/>
     <ROW Property="ProductCode" Value="1033:{1684671C-AAFC-47C3-A0E8-FB6BD0A07B48} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
@@ -177,6 +178,9 @@
     <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_5"/>
     <ROW Feature_="MainFeature" Component_="ConsoleApp1.dll_6"/>
     <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="GRL_Icon.exe" SourcePath="C:\Users\GRL-LT-195\source\repos\ConsoleApp1\ConsoleApp1\GRL_Icon.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
