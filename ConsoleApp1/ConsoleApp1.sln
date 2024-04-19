@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{49550027-05E9-4E8C-81ED-97B8652AC51A}"
+EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "AI Setup Project1", "AI Setup Project1\AI Setup Project1.aiproj", "{4B3BD1B5-A99C-4AEC-B21B-3B64F11BB2B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49550027-05E9-4E8C-81ED-97B8652AC51A}.All|Any CPU.ActiveCfg = Debug|Any CPU
+		{49550027-05E9-4E8C-81ED-97B8652AC51A}.All|Any CPU.Build.0 = Debug|Any CPU
+		{49550027-05E9-4E8C-81ED-97B8652AC51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49550027-05E9-4E8C-81ED-97B8652AC51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49550027-05E9-4E8C-81ED-97B8652AC51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49550027-05E9-4E8C-81ED-97B8652AC51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B3BD1B5-A99C-4AEC-B21B-3B64F11BB2B3}.All|Any CPU.ActiveCfg = DefaultBuild
+		{4B3BD1B5-A99C-4AEC-B21B-3B64F11BB2B3}.All|Any CPU.Build.0 = DefaultBuild
+		{4B3BD1B5-A99C-4AEC-B21B-3B64F11BB2B3}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{4B3BD1B5-A99C-4AEC-B21B-3B64F11BB2B3}.Debug|Any CPU.Build.0 = DefaultBuild
+		{4B3BD1B5-A99C-4AEC-B21B-3B64F11BB2B3}.Release|Any CPU.ActiveCfg = DefaultBuild
+		{4B3BD1B5-A99C-4AEC-B21B-3B64F11BB2B3}.Release|Any CPU.Build.0 = DefaultBuild
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07AA335B-F06D-421E-9253-CA68C30821E2}
+	EndGlobalSection
+EndGlobal
